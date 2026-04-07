@@ -1,0 +1,6 @@
+So when I trained the model using standard parameters given in file I observed that 
+The loss generally decreases during training but fluctuates between iterations. Towards the end, it shows some increase, indicating that the model is not improving consistently and may be oscillating around a minimum.
+After increasing the iterations to 3000, the loss still fluctuated instead of going down steadily. However, the model trained longer and the final loss looked slightly improved compared to before.
+When I increased the number of layers to 8 and the number of heads to 8, the loss still fluctuated and did not show a consistent downward trend. Compared to the earlier configuration, the training became slower, but the loss did not improve significantly and in some iterations even increased.
+Increasing the number of embeddingfrom 128 to 256 it improved the model slightly (lower loss), but made training slower. The loss still fluctuates but overall performance is better.
+Increasing eval_iters from 20 t0 50 makes the loss more stable and accurate, but does not improve the model performance. It also increases computation time.
